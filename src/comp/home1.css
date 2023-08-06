@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.home {
+  padding: 30px;
+  background: #0f0f0f;
+}
+
+.home .top_container {
+  width: 1005;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home .top_container .left_container {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #323232, 141414);
+  border-radius: 10px;
+}
