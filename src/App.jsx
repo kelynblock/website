@@ -1,15 +1,15 @@
 import React from "react";
 import Home1 from "./comp/Home1.jsx";
-import Nav from "./comp/Nav";
-import { BrowserRouter } from "react-router-dom";
-import { Link } from "react-router-dom";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <Nav />
-        <Home1 />
+        <Routes>
+          <Route path="/" element={<Home1 />} />
+        </Routes>
       </BrowserRouter>
     </div>
   );

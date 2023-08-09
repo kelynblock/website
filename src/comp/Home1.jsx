@@ -1,13 +1,21 @@
 import React from "react";
 import "./home1.css";
 import { Link } from "react-router-dom";
-
+import {
+  AiOutlineDoubleRight,
+  AiOutlineCamera,
+  AiOutlineDribble,
+  AiOutlinkeTwitter,
+} from "react-icons/ai";
 import { PiPencilCircleBold } from "react-icons/pi";
 import { FaReact } from "react-icons/fa";
+import { BiCodeAlt } from "react-icons/bi";
+import Nav from "./Nav";
 
 const Home1 = () => {
   return (
     <>
+      <Nav />
       <div className="home">
         <div className="top_container">
           <div className="left_container">
@@ -56,9 +64,27 @@ const Home1 = () => {
         <div className="mid_container">
           <div className="content">
             <div className="box">
-              <AiOutlineCamera />
-              <PiPencilCircleBold />
-              <FaReact />
+              <div className="img_box">
+                <AiOutlineCamera />
+                <PiPencilCircleBold />
+                <FaReact />
+                <BiCodeAlt />
+              </div>
+            </div>
+            <div className="detail">
+              <div className="info">
+                <p>spcecialization</p>
+                <h3>services offering</h3>
+              </div>
+              <div className="icon">
+                <AiOutlineDoubleRight />
+              </div>
+            </div>
+          </div>
+          <div className="box">
+            <div className="img_box">
+              <AiOutlineDribble />
+              <AiOutlinkeTwitter />
             </div>
             <div className="detail">
               <div className="info">
