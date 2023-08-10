@@ -5,7 +5,7 @@ import {
   AiOutlineDoubleRight,
   AiOutlineCamera,
   AiOutlineDribble,
-  AiOutlinkeTwitter,
+  AiOutlineTwitter,
 } from "react-icons/ai";
 import { PiPencilCircleBold } from "react-icons/pi";
 import { FaReact } from "react-icons/fa";
@@ -49,11 +49,24 @@ const Home1 = () => {
                 <Link to="/about" className="link">
                   <div className="detail">
                     <div className="info">
-                      <p>showcase</p>
-                      <h3>projects</h3>
+                      <p>more about me</p>
+                      <h3>credentials</h3>
                     </div>
                     <div className="icon">
                       <AiOutlineDoubleRight />
+                    </div>
+                  </div>
+                </Link>
+              </div>
+              <div className="box">
+                <div className="img_box">
+                  <img src="img/my-works.png" alt="work"></img>
+                </div>
+                <Link to="/about" className="link">
+                  <div className="detail">
+                    <div className="info">
+                      <p>showcase</p>
+                      <h3>projects</h3>
                     </div>
                   </div>
                 </Link>
@@ -65,34 +78,48 @@ const Home1 = () => {
           <div className="content">
             <div className="box">
               <div className="img_box">
+                <img src="img/gfonts.png" alt="fonts"></img>
+              </div>
+              <div className="detail">
+                <div className="info">
+                  <p>blog</p>
+                  <h3>fonts</h3>
+                </div>
+                <div className="icon">
+                  <AiOutlineDoubleRight />
+                </div>
+              </div>
+            </div>
+            <div className="box">
+              <div className="img_box">
                 <AiOutlineCamera />
                 <PiPencilCircleBold />
                 <FaReact />
                 <BiCodeAlt />
               </div>
-            </div>
-            <div className="detail">
-              <div className="info">
-                <p>spcecialization</p>
-                <h3>services offering</h3>
+              <div className="detal">
+                <div className="info">
+                  <p>spcecialization</p>
+                  <h3>services offering</h3>
+                </div>
+                <div className="icon">
+                  <AiOutlineDoubleRight />
+                  <AiOutlineTwitter />
+                </div>
               </div>
-              <div className="icon">
-                <AiOutlineDoubleRight />
-              </div>
             </div>
-          </div>
-          <div className="box">
-            <div className="img_box">
-              <AiOutlineDribble />
-              <AiOutlinkeTwitter />
-            </div>
-            <div className="detail">
-              <div className="info">
-                <p>blog</p>
-                <h3>fonts</h3>
+            <div className="box">
+              <div className="img_box">
+                <AiOutlineDribble />
               </div>
-              <div className="icon">
-                <AiOutlineDoubleRight />
+              <div className="detail">
+                <div className="info">
+                  <p>stay with me</p>
+                  <h3>profiles</h3>
+                </div>
+                <div className="icon">
+                  <AiOutlineDoubleRight />
+                </div>
               </div>
             </div>
           </div>
