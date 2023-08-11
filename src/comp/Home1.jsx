@@ -80,47 +80,61 @@ const Home1 = () => {
               <div className="img_box">
                 <img src="img/gfonts.png" alt="fonts"></img>
               </div>
-              <div className="detail">
-                <div className="info">
-                  <p>blog</p>
-                  <h3>fonts</h3>
+              <Link to="/blog" className="link">
+                <div className="detail">
+                  <div className="info">
+                    <p>blog</p>
+                    <h3>fonts</h3>
+                  </div>
+                  <div className="icon">
+                    <AiOutlineDoubleRight />
+                  </div>
                 </div>
-                <div className="icon">
-                  <AiOutlineDoubleRight />
+              </Link>
+            </div>
+            <div className="box2">
+              <div className="img_box">
+                <div className="img_container">
+                  <AiOutlineCamera />
+                  <PiPencilCircleBold />
+                  <FaReact />
+                  <BiCodeAlt />
                 </div>
               </div>
+              <Link to="/services" className="link">
+                <div className="detal">
+                  <div className="info">
+                    <p>spcecialization</p>
+                    <h3>services offering</h3>
+                  </div>
+                  <div className="icon">
+                    <AiOutlineDoubleRight />
+                  </div>
+                </div>
+              </Link>
             </div>
             <div className="box">
               <div className="img_box">
-                <AiOutlineCamera />
-                <PiPencilCircleBold />
-                <FaReact />
-                <BiCodeAlt />
-              </div>
-              <div className="detal">
-                <div className="info">
-                  <p>spcecialization</p>
-                  <h3>services offering</h3>
-                </div>
-                <div className="icon">
-                  <AiOutlineDoubleRight />
-                  <AiOutlineTwitter />
+                <div className=" img_container">
+                  <div className="img">
+                    <AiOutlineDribble />
+                  </div>
+                  <div className="img">
+                    <AiOutlineTwitter />
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="box">
-              <div className="img_box">
-                <AiOutlineDribble />
-              </div>
-              <div className="detail">
-                <div className="info">
-                  <p>stay with me</p>
-                  <h3>profiles</h3>
+              <Link to="/contact" className="link">
+                <div className="detail">
+                  <div className="info">
+                    <p>stay with me</p>
+                    <h3>profiles</h3>
+                  </div>
+                  <div className="icon">
+                    <AiOutlineDoubleRight />
+                  </div>
                 </div>
-                <div className="icon">
-                  <AiOutlineDoubleRight />
-                </div>
-              </div>
+              </Link>
             </div>
           </div>
         </div>
