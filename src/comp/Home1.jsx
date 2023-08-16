@@ -1,5 +1,7 @@
 import React from "react";
 import "./home1.css";
+import Nav from "./Nav";
+import Footer from "./footer";
 import { Link } from "react-router-dom";
 import {
   AiOutlineDoubleRight,
@@ -10,9 +12,11 @@ import {
 import { PiPencilCircleBold } from "react-icons/pi";
 import { FaReact } from "react-icons/fa";
 import { BiCodeAlt } from "react-icons/bi";
+
 const Home1 = () => {
   return (
     <>
+      <Nav />
       <div className="home">
         <div className="top_container">
           <div className="left_container">
@@ -141,6 +145,7 @@ const Home1 = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 };
