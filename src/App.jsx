@@ -1,19 +1,18 @@
-import React from "react";
-import Home1 from "./comp/Home1.jsx";
-
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import React from 'react'
+import Nav from './comp/nav'
+import Footer from './comp/footer'
+import Rout from './comp/rout'
+import { BrowserRouter} from 'react-router-dom'
 const App = () => {
   return (
-    <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home1 />} />
-        </Routes>
-      </BrowserRouter>
-    </div>
-  );
-};
+    <>
+    <BrowserRouter>
+    <Nav />
+    <Rout />
+    <Footer />
+    </BrowserRouter>
+    </>
+  )
+}
 
-export default App;
+export default App

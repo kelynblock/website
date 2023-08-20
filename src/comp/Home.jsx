@@ -1,7 +1,5 @@
 import React from "react";
-import "./home1.css";
-import Nav from "./Nav";
-import Footer from "./footer";
+import "./home.css";
 import { Link } from "react-router-dom";
 import {
   AiOutlineDoubleRight,
@@ -12,26 +10,22 @@ import {
 import { PiPencilCircleBold } from "react-icons/pi";
 import { FaReact } from "react-icons/fa";
 import { BiCodeAlt } from "react-icons/bi";
-
-const Home1 = () => {
+const Home = () => {
   return (
     <>
-      <Nav />
       <div className="home">
         <div className="top_container">
           <div className="left_container">
             <div className="img_container">
               <div className="img_box">
-                <img src="img/me.png" alt="me"></img>
+                <img src="../img/me.jpg" alt="me"></img>
               </div>
             </div>
             <Link to="/about" className="link">
               <div className="detail_container">
                 <h4>a React Developer</h4>
                 <h3>Kelyn Block</h3>
-                <p>
-                  I am a Indianapolis-based React Developer and web designer
-                </p>
+                <p>I am a Indianapolis -based React Developer </p>
                 <div className="icon">
                   <AiOutlineDoubleRight />
                 </div>
@@ -39,7 +33,7 @@ const Home1 = () => {
             </Link>
           </div>
           <div className="right_container">
-            <div className="content">
+            <div className="contant">
               <div className="top_box">
                 <p>latest works and featured</p>
               </div>
@@ -49,7 +43,7 @@ const Home1 = () => {
                     <img src="img/sign.png" alt="sign"></img>
                   </div>
                   <Link to="/about" className="link">
-                    <div className="detail">
+                    <div className="deatil">
                       <div className="info">
                         <p>more about me</p>
                         <h3>credentials</h3>
@@ -65,7 +59,7 @@ const Home1 = () => {
                     <img src="img/my-works.png" alt="work"></img>
                   </div>
                   <Link to="/work" className="link">
-                    <div className="detail">
+                    <div className="deatil">
                       <div className="info">
                         <p>showcase</p>
                         <h3>projects</h3>
@@ -81,7 +75,7 @@ const Home1 = () => {
           </div>
         </div>
         <div className="mid_container">
-          <div className="content">
+          <div className="contant">
             <div className="box">
               <div className="img_box">
                 <img src="img/gfonts.png" alt="fonts"></img>
@@ -145,9 +139,8 @@ const Home1 = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
 
-export default Home1;
+export default Home;
